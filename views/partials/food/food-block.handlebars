@@ -1,0 +1,12 @@
+<li class="list-group-item d-flex flex-row justify-content-between">
+	<p class="description">
+		{{description}}
+	</p>
+
+	{{#unless is_eaten}}
+		<button class="btn set-nom btn-outline-warning" data-id="{{id}}">
+			NOM
+		</button>
+	{{/unless}}
+
+</li>

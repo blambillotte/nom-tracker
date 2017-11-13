@@ -1,0 +1,11 @@
+
+p, .description {
+  max-width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+button {
+  cursor: pointer;
+}
