@@ -7,8 +7,8 @@ const food = {
       cb(res);
     });
   },
-  create: function(col, val, cb) {
-    orm.create('food', col, val, function(res) {
+  create: function(val, cb) {
+    orm.create('food', 'description', val, function(res) {
       cb(res);
     });
   },

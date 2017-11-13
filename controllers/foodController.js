@@ -34,9 +34,10 @@ router.put('/api/food/:id', function(req, res) {
 });
 
 router.post("/api/food", function(req, res) {
-  food.create(req.body.column, req.body.value, function(result) {
+  console.log(req.body);
+  food.create(req.body.value, function(result) {
     // Send back the ID of the new food item
-    res.json({ id: result.insertId });
+    res.redirect('/');
   });
 });
 
