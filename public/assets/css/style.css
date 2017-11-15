@@ -9,3 +9,9 @@ p, .description {
 button {
   cursor: pointer;
 }
+
+
+#header {
+  background: url('../img/table.jpg');
+  background-size: cover;
+}
