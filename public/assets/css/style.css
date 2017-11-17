@@ -1,17 +1,51 @@
 
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Raleway:600');
+
 p, .description {
   max-width: 80%;
   text-overflow: ellipsis;
   overflow: hidden;
   margin-bottom: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
 
 button {
   cursor: pointer;
+  font-family: 'Raleway', sans-serif;
 }
 
+body {
+  font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+  color: #e9ecef;
+  font-weight: 600;
+  font-family: 'Amatic SC', cursive;
+  text-shadow: 3px 3px 5px #110c08;
+}
 
 #header {
   background: url('../img/table.jpg');
   background-size: cover;
+}
+
+#value {
+  box-shadow: 1px 1px 11px #110c08;
+  font-size: 20px;
+}
+
+button[type="submit"] {
+  box-shadow: 1px 1px 11px #110c08;
+  font-size: 20px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 600;
+}
+
+#footer {
+  background-color: #495057;
+  width: 100vw;
+  margin-top: 30px;
+  color: white;
 }

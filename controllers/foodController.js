@@ -11,7 +11,6 @@ router.get('/', function(req, res) {
     var hbsObject = {
       food: data
     };
-    console.log(hbsObject);
     res.render('index', hbsObject);
   });
 });
@@ -34,7 +33,6 @@ router.put('/api/food/:id', function(req, res) {
 });
 
 router.post("/api/food", function(req, res) {
-  console.log(req.body);
   food.create(req.body.value, function(result) {
     // Send back the ID of the new food item
     res.redirect('/');

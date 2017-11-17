@@ -5,7 +5,7 @@ const connection = require('../config/connection');
 const orm = {
   listAll: function(tableInput, cb) {
 
-    const queryString = `SELECT * FROM ${tableInput};`;
+    const queryString = `SELECT * FROM ${tableInput} ORDER BY updated_at DESC;`;
 
     connection.query(queryString, function(err, result) {
       if (err) {

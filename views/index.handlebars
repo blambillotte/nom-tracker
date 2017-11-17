@@ -4,28 +4,17 @@
   <div class="container">
     <h1 class="display-3">Nom Tracker!</h1>
 
-
-    <!-- <p>
-      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        Link with href
-      </a>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        Button with data-target
-      </button>
-    </p>
-    <div class="collapse" id="collapseExample">
-      <div class="card card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+    <div class="row justify-content-center align-items-end">
+      <div class="col-md-4">
+        <form class="create-food" action="/api/food/" method="post">
+          <textarea class="form-control" id="value" name="value" rows="1" required placeholder="Add Nom Description"></textarea>
       </div>
-    </div> -->
+      <div class="col-md-2">
+        <button type="submit" class="btn btn-primary">Add Noms</button>
+      </div>
+        </form>
+    </div>
 
-    <form class="create-food" action="/api/food/" method="post">
-      <div class="form-group">
-       <label for="value">Add Your Nom Description</label>
-       <textarea class="form-control" id="value" name="value" rows="1"></textarea>
-     </div>
-     <button type="submit" class="btn btn-primary">Add Noms</button>
-    </form>
 
   </div>
 </div>
@@ -56,6 +45,10 @@
     </div>
 
   </div> <!-- End Row -->
+</div>
 
-
-<div>
+<footer class="" id="footer">
+  <div class="container">
+    <p>Made by Ben Lambillotte</p>
+  </div>
+</footer>
