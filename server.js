@@ -22,3 +22,4 @@ const routes = require('./controllers/foodController');
 app.use("/", routes);
 
 app.listen(PORT);
+console.log(`App listening on Port: ${PORT}. \nLocal Development: http://localhost:${PORT}/`);

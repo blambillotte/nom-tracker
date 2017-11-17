@@ -4,7 +4,6 @@
   const nomBtns = $('.set-nom');
 
   function eatFood(event) {
-    console.log(this.dataset.id);
     //Disable the button
     $(this).attr("disabled", "disabled");
 
